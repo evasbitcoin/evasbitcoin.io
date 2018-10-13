@@ -1,0 +1,265 @@
+<!DOCTYPA html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<title>Google Developers</title>
+<link rel="Icon" type="GDicon/png" href="GDicon.png" />
+<link rel="stylesheet" type="text/css" href="style_rwd.css" media="all" />
+
+<script>
+function showMenu(){
+	// 1. 抓出想要操作的標籤物件 (HTML Element)
+	// document.querySelector("CSS 選擇器");
+	let menu=document.querySelector(".menu");
+	menu.style.left="0px";
+}
+function hideMenu(){
+	let menu=document.querySelector(".menu");
+	menu.style.left="-200px";
+}
+
+</script>
+
+
+</head>
+<body>
+<!--
+	1200px 以上：電腦版
+	500px ~ 1200px：平板
+	500px 以下：手機
+-->
+	<nav>
+		<div class="top";style="height:48px; position:fixed;">
+			<div onclick="showMenu();" class="trigger"><img src="GD3.png" width="216" height="32" ></div>
+			<div class="GD" style=" margin-left:25px"><img src="GD2.png" width="216" height="32"  ></div>
+			<div class="menu" onmouseleave="hideMenu();">
+					
+					<div class="item"  style="margin-left: 48px;">Home</div>
+					<div class="item"  style="margin-left: 48px;">Events</div>
+					<div class="item"  style="margin-left: 48px;">Product Index</div>
+					<div class="item"  style="margin-left: 48px;">Developer Programs</div>
+					<div class="item"  style="margin-left: 48px;">Blog</div>
+			</div>
+			
+			<div>
+				<button class="d">...</button>
+			</div>
+			<div>
+				<img src="person.jpg" class="person"/>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="topBuild">
+		<div class="middle">
+			<div class="search">
+				<img src="search.png" class="searchicon"/>
+				<input type="text" class="searchBox" placeholder="搜尋產品和說明文件">
+			</div>
+		</div>
+		<div class="build">
+			<div style="font-size:48px;text-align:center;margin-bottom:10px;">Build <b>anything</b> with Google</div>
+		</div>	
+	</div>
+	<div class="buildline"></div>
+	<!--
+	<div class="menu-desktop">電腦版選單</div>
+	<div class="menu-mobile">手機版選單</div>
+	-->
+	
+	<div class="main">
+		<div class="middle">
+			<div style="width:100%;">
+				<div class="bot">
+					<div class="up">
+						<div class="event">Events</div>
+						<div class="view">VIEW ALL</div>
+					</div>
+					
+					<div class="down">
+						<div class="down1">
+							<img src="first.png" style="width:100%">
+							<div class="fierbase">
+								Firebase Summit 2018
+								<div> 29 | Pargue, Czech Republic </div>
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:16px;line-height:25px">
+								Join us to learn how Firebase helps mobile app teams of all sizes across the entire development lifecycle.
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding-left:16px;line-height:25px">#FirebaseSummit</div>
+							<div style="font-size:12px;color:#039be5;padding:16px;line-height:25px;font-weight:bold">LEARN MORE</div>
+						</div>
+						<div class="down2">
+							<img src="second.png" style="width:100%">
+							<div class="fierbase">
+								Android Dev Summit 2018
+								<div> November 7-8 | Mountain View, USA </div>
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 16px 25px 16px;line-height:25px">
+								Two days of networking and deep technical sessions with the Android engineering team.
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 0px 27px 16px;line-height:25px">#AndroidSummit</div>
+							<div style="font-size:12px;color:#039be5;padding:16px;line-height:25px;font-weight:bold">LEARN MORE</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--
+	<div class="frame">
+		<div class="box">
+			<img src="B.jpg" />
+			<div>1</div>
+		</div>
+		<div class="box">
+			<img src="B.jpg" />
+			<div>2</div>
+		</div>
+		<div class="box">
+			<img src="B.jpg" />
+			<div>3</div>
+		</div>
+		<div class="box">
+			<img src="B.jpg" />
+			<div>4</div>
+		</div>
+	</div>
+	-->
+	<div class="main" style="background-color:white">
+		<div class="middle">
+			<div style="width:100%">
+				<div class="bot">
+					<div class="up">
+						<div class="news">News</div>
+					</div>
+					
+					<div class="newsdown">
+					
+						<div class="down1">
+							<img src="third.png" style="width:100%">
+							<div class="fierbase">
+								Google I/O Sessions
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:16px;line-height:25px">
+								If you didn't have a chance to attend all of your favorite talks, or you want to refresh what you learned at the conference, you can (re)watch recordings of the Keynotes and Sessions on the I/O website at your convenience.
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding-left:16px;padding-right:16px;line-height:25px">
+								We'd love your feedback so we can continue to tailor our content to your needs in future years! To rate a Session you attended and/or watched, sign-in on the I/O website, click on it from the main schedule page, and click the blue Rate session button.
+							</div>
+							<div style="font-size:12px;color:#039be5;padding:16px;line-height:25px;font-weight:bold">WATCH SESSIONS</div>
+						</div>
+						
+						
+						<div class="down2">
+							<img src="four.png" style="width:100%">
+							<div class="fierbase">
+								A guide to the Google Play Console
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 16px 25px 16px;line-height:25px">
+								Whether you’re in a business or technical role or on a team of 1 or 100, the Play Console can help you with more than publishing. This tour of Play Console introduces its many features that can help you improve app quality and business performance.
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 0px 27px 16px;line-height:25px;margin-bottom:28px"></div>
+							<div style="font-size:12px;color:#039be5;padding:16px;line-height:25px;font-weight:bold">READ MORE</div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				
+				<div class="video">
+					<div class="videodown">
+						
+						
+						<div class="down1">
+							<iframe src="https://www.youtube.com/embed/PingeD_5yPQ" style="width:100%" width="560px" height="315" frameborder="0" >
+								
+							</iframe>
+							<div style="font-size:24px;color:#039be5;padding:16px 16px;line-height:30px">
+								Celebrating app makers worldwide
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 16px 25px 16px;line-height:25px">
+								Developers, founders, product managers, designers, and others reveal what they do when they step away from their computers.
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 16px 60px 16px;line-height:25px">
+								Discover their dreams, passions, and who they are as people.
+							</div>
+							<div style="font-size:12px;color:#039be5;padding:16px;line-height:25px;font-weight:bold">LEARN MORE     GET FEATURED</div>
+						</div>
+						
+						
+						<div class="down2">
+							<iframe src="https://www.youtube.com/embed/ua4QGWmDfB8" style="width:100%" width="560px" height="315" frameborder="0">
+								
+							</iframe>
+							<div style="font-size:24px;color:#039be5;padding:16px;line-height:30px">
+								Google Assistant developer community program
+							</div>
+							<div style="font-size:16px;color:#2f4468;padding:0px 16px 25px 16px;line-height:25px">
+								When you publish an Action for the Google Assistant, you’ll be invited to join our developer community program and receive an Assistant t-shirt, 
+								plus up to $200 in Google Cloud credit each month for one year. Hit certain product milestones and you’ll be eligible for Google Home devices, 
+								invitations to exclusive events, mentorship by Googlers, and other rewards!
+							</div>
+							<div style="font-size:12px;color:#039be5;padding:0px 16px 16px 16px;line-height:25px;font-weight:bold">LEARN MORE</div>
+						</div>
+						
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<div style="width:100%;background-color:#303c42">
+		<div class="bottom" style="justify-content:flex-end">
+			<div class="one">
+				<div class="text" style="color:white">連結</div>
+				<div class="text">網誌</div>
+				<div class="text">Facebook</div>
+				<div class="text">Google+</div>
+				<div class="text">Medium</div>
+				<div class="text">Twitter</div>
+				<div class="text">YouTube</div>
+			</div>
+			<div class="one">
+				<div class="text" style="color:white">計劃</div>
+				<div class="text">Women Techmakers</div>
+				<div class="text">Agency Program</div>
+				<div class="text">GDG</div>
+				<div class="text">Google Developers Experts</div>
+				<div class="text">Startup Launchpad</div>
+			</div>
+			<div class="two">
+				<div class="text" style="color:white">開發人員控制台</div>
+				<div class="text">Google API Console</div>
+				<div class="text">Google Cloud Platform Console</div>
+				<div class="text">Google Play Console</div>
+				<div class="text">Firebase Console</div>
+				<div class="text">Actions on Google Console</div>
+				<div class="text">Cast SDK Developer Console</div>
+				<div class="text">Chrome Web Store Dashboard</div>
+			</div>
+			<div class="two">
+				<div class="text" style="background-color:#37424b">
+					<div class="GD2" style="margin:0px -24px 0px -24px;padding:0px 24px 16px 20px">
+						<img src="GD2.png" height="89%">
+					</div>
+				</div>
+				<div class="text" style="background-color:#455a64;height:1px;width:100%;margin-bottom:16px"></div>
+				<div class="text">Android</div>
+				<div class="text">Chrome</div>
+				<div class="text">Firebase</div>
+				<div class="text">Google Cloud Platform</div>
+				<div class="text">所有產品</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
